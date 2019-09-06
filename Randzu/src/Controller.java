@@ -89,16 +89,15 @@ public class Controller {
         return this.players[0];
     }
 
-    private Player chooseFirstPlayer()
+    private Player chooseFirstPlayer()// Если 1 то ходит первый игрок,
     {
         try {
             System.out.println("Введите кто ходит первым : [1]" + this.players[0].getName() +
-                                  " или [2]" + this.players[1].getName());
-            return this.scanner.nextInt() == 1 ? this.players[0] : this.players[1];
+                                  " или [любую фигню]" + this.players[1].getName());
+            return Integer.parseInt(this.scanner.next()) == 1 ? this.players[0] : this.players[1];
         } catch (Exception e) {
-            System.out.println("Введите цифру 1 или 2");
+            return this.players[1];
         }
-        return null;
     }
     private Player getPlayer()
     {

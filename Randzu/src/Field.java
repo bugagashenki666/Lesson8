@@ -161,7 +161,7 @@ public class Field {
         {
             for (int j = 0 ; j < this.data[i].length; j++)
             {
-                System.out.print((this.data[i][j] == 0 || this.data[i][j] == EMPTY)?EMPTY:this.data[i][j]);
+                System.out.print(((this.data[i][j] == 0 || this.data[i][j] == EMPTY)?EMPTY:this.data[i][j]) + " ");
             }
             System.out.println();
         }

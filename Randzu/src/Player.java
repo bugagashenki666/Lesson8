@@ -19,7 +19,7 @@ public class Player {
     public int[]makeTurn()
     {
         try{
-        System.out.println(this.getName()+ " введите координаты: ");
+        System.out.println(this.getName() + "("+ this.getSymbol() + ") введите координаты: ");
         return new int[]{Integer.parseInt(scanner.next()),Integer.parseInt(scanner.next())};}
         catch(Exception e)
         {
